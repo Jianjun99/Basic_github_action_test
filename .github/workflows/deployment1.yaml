@@ -20,5 +20,3 @@ jobs:
         run: npm run build
       - name: Deploy to server
         run: echo "Deploying to server..." 
-    branches:
-      - main
