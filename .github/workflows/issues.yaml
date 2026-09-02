@@ -1,5 +1,6 @@
 name: Handle issues
-on issues
+on: issues:
+  types: [opened, edited, closed]
 jobs:
   handle-issues:
     runs-on: ubuntu-latest
