@@ -1,0 +1,12 @@
+name: Handle issues
+on issues
+jobs:
+  handle-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output issue title
+        run: echo "Deploying to server failed..."
+        run: echo "Issue title: ${{ github.event.issue.title }}"
+        run: echo "Issue body: ${{ toJSON(github.event) }}"
+
+
