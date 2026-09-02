@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output issue title
-        run: echo "Deploying to server failed..."
-        run: echo "Issue title: ${{ github.event.issue.title }}"
-        run: echo "Issue body: ${{ toJSON(github.event) }}"
+        run: |
+          echo "Deploying to server failed..."
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Issue body: ${{ toJSON(github.event) }}"
 
 
